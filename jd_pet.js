@@ -366,7 +366,19 @@ async function masterHelpInit() {
  */
 async function slaveHelp() {
     let helpPeoples = '';
+    
+    _newShareCodes = [];
     for (let code of newShareCodes) {
+        _newShareCodes.push(code);
+    }
+    for (let code of newShareCodes) {
+        _newShareCodes.push(code);
+    }
+    
+    //for (let code of newShareCodes) {
+    for(var x = $.index; x < _newShareCodes.length; x++) {
+        var code = _newShareCodes[x];
+	    
 		if(NoNeedCodes){
 			var llnoneed=false;
 			for (let NoNeedCode of NoNeedCodes) {
